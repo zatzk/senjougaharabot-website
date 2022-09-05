@@ -1,0 +1,50 @@
+---
+// Component Imports
+import { Icon } from 'astro-icon'
+import ButtonGithub from '../components/ButtonGithub.astro';
+import ButtonDiscord from '../components/ButtonDiscord.astro';
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<style lang="css">
+  [astro-icon = "fontisto:discord"] {
+      width: 22px;
+  },
+  [astro-icon = "eva:github-fill"] {
+      width: 22px;
+  }
+  
+</style>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Senjougahara Website</title>
+	</head>
+  
+	<body >
+    <main class="bg-hero bg-no-repeat bg-cover bg-center">
+
+      <div class="grid place-items-center h-screen content-center">
+        <div class="mb-40">
+          <h1 class="sm:text-[52px] md:text-[82px] lg:text-[92px]  font-semibold  text-white drop-shadow-[0_7px_5px_rgba(0,0,0,0.6)] ">Senjougahara</h1>
+        </div>
+        <div class="inline">
+          <ButtonDiscord >
+            <Icon name="fontisto:discord" class="m-0 "/>
+            <a class="m-0 pl-2" >Add to Discord</a>
+          </ButtonDiscord>
+
+          <ButtonGithub >
+            <Icon name="codicon:github-inverted" class="m-0 "/>
+            <a class="m-0 pl-2" >github code</a>
+          </ButtonGithub>
+
+        </div>
+      </div>
+    </main>
+		
+	</body>
+</html>
