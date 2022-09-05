@@ -7,10 +7,7 @@ import ButtonDiscord from '../components/ButtonDiscord.astro';
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 <style lang="css">
-  [astro-icon = "fontisto:discord"] {
-      width: 22px;
-  },
-  [astro-icon = "eva:github-fill"] {
+  [astro-icon ] {
       width: 22px;
   }
   
@@ -27,22 +24,27 @@ import ButtonDiscord from '../components/ButtonDiscord.astro';
 	<body >
     <main class="bg-hero bg-no-repeat bg-cover bg-center">
 
-      <div class="grid place-items-center h-screen content-center">
-        <div class="mb-40">
+      <div class="h-screen content-center flex flex-col relative align-middle justify-center place-items-center">
+
+        <div class="mb-40 flex flex-col relative align-middle justify-center place-items-center">
           <h1 class="sm:text-[52px] md:text-[82px] lg:text-[92px]  font-semibold  text-white drop-shadow-[0_7px_5px_rgba(0,0,0,0.6)] ">Senjougahara</h1>
+          <a class="sm:text-[52px]  font-medium  text-white drop-shadow-[0_7px_5px_rgba(0,0,0,0.3)] ">your best waifu!</a>
         </div>
-        <div class="inline">
-          <ButtonDiscord >
-            <Icon name="fontisto:discord" class="m-0 "/>
+
+        <div>
+          <div class="flex">
+            <ButtonDiscord >
+              <Icon name="fontisto:discord" class="m-0 "/>
             <a class="m-0 pl-2" >Add to Discord</a>
           </ButtonDiscord>
 
           <ButtonGithub >
-            <Icon name="codicon:github-inverted" class="m-0 "/>
-            <a class="m-0 pl-2" >github code</a>
+            <Icon name="fe:github" class="m-0"/>
+            <a class="m-0 pl-2" >Github Code</a>
           </ButtonGithub>
-
+        
         </div>
+      </div>
       </div>
     </main>
 		
