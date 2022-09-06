@@ -18,7 +18,7 @@ import ButtonDiscord from '../components/ButtonDiscord.astro';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Senjougahara Website</title>
+		<title>Senjougahara Bot Website</title>
 	</head>
   
 	<body >
@@ -26,22 +26,32 @@ import ButtonDiscord from '../components/ButtonDiscord.astro';
 
       <div class="h-screen content-center flex flex-col relative align-middle justify-center place-items-center">
 
-        <div class="mb-40 flex flex-col relative align-middle justify-center place-items-center">
+        <div class="mb-[52px] flex flex-col relative align-middle justify-center place-items-center">
           <h1 class="sm:text-[52px] md:text-[82px] lg:text-[92px]  font-semibold  text-white drop-shadow-[0_7px_5px_rgba(0,0,0,0.6)] ">Senjougahara</h1>
-          <a class="sm:text-[52px]  font-medium  text-white drop-shadow-[0_7px_5px_rgba(0,0,0,0.3)] ">your best waifu!</a>
+          <a class="text-[25px] bg-[#e669] p-[5px] rounded-[5px] font-medium  text-white drop-shadow-[0_7px_5px_rgba(0,0,0,0.4)] ">your best multipurpose discord bot!</a>
+
+          <div class=" w-[100px] mt-10 border-black border-2 rounded-full drop-shadow-[0_7px_5px_rgba(0,0,0,0.4)]">
+            <img class="object-cover rounded-full" src="/images/k6E58jK.png"/>
+          </div>
         </div>
 
         <div>
+          
           <div class="flex">
-            <ButtonDiscord >
-              <Icon name="fontisto:discord" class="m-0 "/>
-            <a class="m-0 pl-2" >Add to Discord</a>
-          </ButtonDiscord>
 
-          <ButtonGithub >
-            <Icon name="fe:github" class="m-0"/>
-            <a class="m-0 pl-2" >Github Code</a>
-          </ButtonGithub>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=931946849261203546&permissions=8&scope=bot%20applications.commands">
+              <ButtonDiscord  >
+                <Icon name="fontisto:discord" class="m-0 "/>
+                <div class="m-0 pl-2" >Add to Discord</div>
+              </ButtonDiscord>
+            </a>
+
+          <a href="https://github.com/zatzk/senjougaharaBot" >
+            <ButtonGithub>
+              <Icon name="fe:github" class="m-0"/>
+              <div class="m-0 pl-2" >Github Code</div>
+            </ButtonGithub>
+          </a>
         
         </div>
       </div>
